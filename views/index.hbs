@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="220px" height="220px">
+
+      <circle cx="100" cy="100" r="75" />
+
+      <path id="curve"
+            d="
+            M 100, 100
+            m -75, 0
+            a 75,75 0 1,1 150,0
+            a 75,75 0 1,1 -150,0
+            "
+            stroke-dasharray="5,10,5"
+      />
+
+      <text width="500">
+          <textPath class="outer-text" alignment-baseline="top" xlink:href="#curve">
+           Never shall man take me hence but only he by whose side I ought to hang; and he shall be the best knight of the world.
+          </textPath>
+      </text>
+
+
+   <text x="100" y="100" fill="red">♡</text>
+
+</svg>
